@@ -8,27 +8,27 @@
         "pages/rank/rank"
     ],
     "tabBar": {
-        "color": "#39b344",
+        "color": "#bdbdbd",
         "selectedColor": "#39b344",
         "backgroundColor": "#fff",
         "list": [
             {
                 "pagePath": "pages/home/home",
                 "text": "首页",
-                "iconPath": "assets/icon_home.png",
-                "selectedIconPath": "assets/icon_home.png"
+                "iconPath": "assets/icon_tab_01.png",
+                "selectedIconPath": "assets/icon_tab_select_01.png"
             },
             {
                 "pagePath": "pages/rank/rank",
                 "text": "榜单",
-                "iconPath": "assets/icon_rank.png",
-                "selectedIconPath": "assets/icon_rank.png"
+                "iconPath": "assets/icon_tab_02.png",
+                "selectedIconPath": "assets/icon_tab_select_02.png"
             },
             {
                 "pagePath": "pages/mine/mine",
                 "text": "我的",
-                "iconPath": "assets/icon_mine.png",
-                "selectedIconPath": "assets/icon_mine.png"
+                "iconPath": "assets/icon_tab_03.png",
+                "selectedIconPath": "assets/icon_tab_select_03.png"
             }
         ]
     },

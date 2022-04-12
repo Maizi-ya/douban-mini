@@ -13,12 +13,11 @@
 }
 
 .container .navbar .title {
-    font-size: 35rpx;
+    font-size: 38rpx;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     max-width: 250rpx;
-    color: #363636;
 }
 
 /* 子绝父相 */
