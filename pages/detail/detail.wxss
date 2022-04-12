@@ -1,0 +1,6 @@
+/* pages/detail/detail.wxss */
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rosybrown;
+}

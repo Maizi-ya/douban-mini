@@ -1,0 +1,45 @@
+/* module/movie-item/movie-item.wxss */
+
+.item {
+    display: inline-flex;
+    flex-direction: column;
+    width: 180rpx;
+}
+
+.item .movie-pic {
+    width: 180rpx;
+    height: 264rpx;
+    border-radius: 8rpx;
+    border: 1rpx solid rgb(241, 241, 241);
+}
+
+.item .movie-title {
+    margin-top: 20rpx;
+    font-size: 30rpx;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item .movie-score {
+    display: flex;
+    align-items: center;
+    margin-top: 2rpx;
+}
+
+.item .movie-score .score {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.item .movie-score .score-title {
+    color: rgb(95, 95, 95);
+    font-size: 25rpx;
+    margin-left: 12rpx;
+}
+
+.item .movie-score .no-score {
+    font-size: 23rpx;
+    margin-top: 2rpx;
+    color: rgb(95, 95, 95);
+}

@@ -1,0 +1,13 @@
+<!--pages/login/login.wxml-->
+<db-nav 
+title="登录"
+></db-nav>
+<view class="container">
+    <image class="logo" src="/assets/icon_logo.png"></image>
+    <view class="login wechat" bindtap="wechat">微信登录</view>
+    <view class="login sms" bindtap="sms">短信验证码登录/注册</view>
+    
+    <view class="agreement">登录表示同意
+        <view class="protocol">豆瓣使用协议 / 隐私协议</view>
+    </view>
+</view>

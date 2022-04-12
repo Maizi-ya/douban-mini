@@ -1,0 +1,131 @@
+/* pages/rank/rank.wxss */
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.movie-flat-view {
+    position: relative;
+    margin-left: 38rpx;
+    margin-right: 38rpx;
+    margin-bottom: 35rpx;
+    margin-top: 30rpx;
+}
+
+.movie-flat-view .hold-img {
+    width: 100%;
+    height: 345rpx;
+    border-radius: 10rpx;
+}
+
+.movie-flat-view .rank-title {
+    position: absolute;
+    top: 35rpx;
+    left: 55rpx;
+    font-size: 45rpx;
+    color: white;
+}
+
+.movie-flat-view .rank-content {
+    position: absolute;
+    bottom: 45rpx;
+    left: 55rpx;
+    right: 55rpx;
+    display: flex;
+    align-items: center;
+    height: 184rpx;
+}
+
+.rank-content .item {
+    width: 130rpx;
+    height: 184rpx;
+    border-radius: 5rpx;
+}
+
+.rank-content .left-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.rank-content .middle-view {
+    position: absolute;
+    top: 0;
+    left: 87rpx;
+    z-index: 2;
+}
+
+.rank-content .right-view {
+    position: absolute;
+    top: 0;
+    left: 174rpx;
+    z-index: 1;
+}
+
+.rank-content .count {
+    position: absolute;
+    left: 350rpx;
+    font-size: 50rpx;
+    color: #c1b9b3;
+}
+
+.movie-rank-view {
+    display: flex;
+    margin-left: 38rpx;
+    margin-right: 38rpx;
+    margin-bottom: 35rpx;
+}
+
+.movie-rank-view .hold-image-view .image-view-size {
+    width: 230rpx;
+    height: 230rpx;
+}
+
+.movie-rank-view .hold-image-view {
+    position: relative;
+}
+
+.movie-rank-view .hold-image-view .bg-image {
+    border-radius: 8rpx;
+    z-index: 1;
+}
+
+.movie-rank-view .hold-image-view .cover-image {
+    border-radius: 8rpx;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.movie-rank-view .right-rank-view {
+    background-color: white;
+    margin-top: 22rpx;
+    margin-bottom: 22rpx;
+    border: 2rpx solid rgb(244, 244, 244);
+    border-radius: 8rpx;
+    margin-left: -2rpx;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-rank-view .rank-list {
+    display: flex;
+}
+
+.right-rank-view .rank-list .movie-title {
+    font-size: 27rpx;
+    margin-left: 42rpx;
+    margin-bottom: 12rpx;
+}
+
+.right-rank-view .rank-list .moview-score {
+    font-size: 24rpx;
+    color: #eaa523;
+    margin-left: 12rpx;
+    margin-top: 3rpx;
+}
+

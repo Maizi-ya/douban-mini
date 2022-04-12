@@ -1,0 +1,13 @@
+<!--module/db-nav/db-nav.wxml-->
+<view class="hold" style="height: {{ navHeight }}px;">
+    <view class="container">
+        <view style="{{ statusBarStyle }}"></view>
+        <view class="navbar" style="{{ navBarStyle }}">
+            <view class="title">{{ title }}</view>
+            <view class="operation-area">
+                <image bindtap="popAction" wx:if="{{ pop == 'true' }}" class="image pop" src="/assets/nav_back.png"></image>
+                <image bindtap="popHome" wx:if="{{ home == 'true' }}" class="image home" src="/assets/nav_home.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

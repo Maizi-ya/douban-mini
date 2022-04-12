@@ -1,0 +1,24 @@
+<!-- pages/home/home.wxml -->
+<db-nav title="首页" titleColor="#ffffff" statusbarColor="#39b344" navbarColor="#39b344" pop='false' home='false'></db-nav>
+<view class="container">
+    <view class="headerView">
+        <view class="searchView">
+            <image class="icon" src="/assets/icon_search.png"></image>
+            <view class="title">搜索</view>
+        </view>
+    </view>
+    <view class="content-wrapper">
+        <block wx:for="{{ items }}" wx:key="unique" wx:for-index="section">
+            <view class="tip-view">
+                <view class="title">{{ item.title }}</view>
+                <view class="more-view" bindtap="morePage" data-section="{{ section }}">
+                    <view class="more">{{ item.moretitle }}</view>
+                    <view class="arrow"></view>
+                </view>
+            </view>
+            <scroll-view class="items-wrapper" scroll-x="true">
+                <movie-item class="item" wx:for="{{ item.subjects }}" wx:for-item="movie" wx:key="unique" movie="{{ movie }}"></movie-item>
+            </scroll-view>
+        </block>
+    </view>
+</view>

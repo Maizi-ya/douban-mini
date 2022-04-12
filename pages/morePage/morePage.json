@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "movie-item": "/module/movie-item/movie-item",
+        "db-nav": "/module/db-nav/db-nav"
+    }
+}

@@ -1,0 +1,37 @@
+/* pages/morePage/morePage.wxss */
+.container {
+    display: flex;
+}
+
+/* 使用 占位元素进行布局 */
+/* .items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30rpx 25rpx;
+}
+
+.item {
+    padding-bottom: 35rpx;
+    white-space: nowrap;
+}
+
+.items-wrapper .place-hold-view {
+    visibility: hidden;
+    width: 186rpx;
+} */
+
+/* 使用 9 宫格进行布局 */
+.items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25rpx 30rpx 60rpx 30rpx;
+}
+
+.items-wrapper .item {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    margin-bottom: 30rpx;
+}

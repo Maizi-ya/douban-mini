@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+<db-nav 
+title="{{ title }}"
+></db-nav>
+<view class="container">666</view>

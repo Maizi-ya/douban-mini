@@ -1,0 +1,42 @@
+<!-- pages/mine/mine.wxml -->
+<db-nav title="书影音档案" pop='false' home='false'></db-nav>
+<view class="container">
+    <view class="header">
+        <image src="/assets/bg_default_profile_grn.png" mode="aspectFill"></image>
+        <view class="login" bindtap="loginTap">登录</view>
+    </view>
+    <view class="version">版本号v1.0.0</view>
+    <view class="holdView">
+        <view class="titleView">
+            <view class="my">我的书影音</view>
+            <view class="loginCheck">
+                <view class="tip">登录查看</view>
+                <view class="arrow"></view>
+            </view>
+        </view>
+        <view wx:for="{{items}}" wx:key="unique">
+            <view class="itemView">
+                <image class="icon" src="/assets/{{ item.icon }}"></image>
+                <view class="itemHoldView">
+                    <view class="contentView">
+                        <view class="leftView">
+                            {{ item.text }}
+                            <view class="readView">
+                                <view class="count">{{ item.count }}</view>
+                                <view class="seen">{{ item.subtitle }}</view>
+                            </view>
+                        </view>
+                        <view class="rightView">
+                            <text class="markText">{{ item.mark }}</text>
+                            <view class="actionView" bind:tap="openDetailPage" data-index="{{index}}">
+                                <view class="action">立即开启</view>
+                                <view class="arrow"></view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="line" wx:if="{{ index < items.length - 1}}"></view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

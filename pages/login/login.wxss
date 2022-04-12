@@ -1,0 +1,45 @@
+/* pages/login/login.wxss */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+}
+
+.logo {
+    width: 182rpx;
+    height: 180rpx;
+    margin-top: 80rpx;
+    border-radius: 30rpx;
+    margin-bottom: 70rpx;
+}
+
+.login {
+    height: 100rpx;
+    background-color: #39b344;
+    width: 100%;
+    text-align: center;
+    line-height: 100rpx;
+    color: white;
+    font-size: 33rpx;
+    border-radius: 18rpx;
+    margin-top: 40rpx;
+}
+
+.login.sms {
+    margin-bottom: 40rpx;
+}
+
+.agreement {
+    display: flex;
+    position: absolute;
+    bottom: 120rpx;
+    color: #9c9c9c;
+    font-size: 28rpx;
+}
+
+.protocol {
+    color: #39b344;
+    margin-left: 12rpx;
+}

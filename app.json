@@ -1,0 +1,44 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/mine/mine",
+        "pages/login/login",
+        "pages/morePage/morePage",
+        "pages/detail/detail",
+        "pages/rank/rank"
+    ],
+    "tabBar": {
+        "color": "#39b344",
+        "selectedColor": "#39b344",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "assets/icon_home.png",
+                "selectedIconPath": "assets/icon_home.png"
+            },
+            {
+                "pagePath": "pages/rank/rank",
+                "text": "榜单",
+                "iconPath": "assets/icon_rank.png",
+                "selectedIconPath": "assets/icon_rank.png"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "text": "我的",
+                "iconPath": "assets/icon_mine.png",
+                "selectedIconPath": "assets/icon_mine.png"
+            }
+        ]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "豆瓣",
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "custom"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

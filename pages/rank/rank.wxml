@@ -1,0 +1,59 @@
+<!--pages/rank/rank.wxml-->
+<db-nav title="榜单" pop='false' home='false'></db-nav>
+<view class="container">
+    <block wx:for="{{ rankMovie.selected_collections }}" wx:key="unique">
+        <view wx:if="{{ index < 1 }}" class="movie-flat-view">
+            <image class="hold-img" mode="aspectFill" src="{{ item.header_bg_image }}">
+            </image>
+            <view class="rank-title">{{ item.name }}</view>
+            <view class="rank-content">
+                <image class="left-view item" src="{{ item.covers[0] }}"></image>
+                <image class="middle-view item" src="{{ item.covers[1] }}"></image>
+                <image class="right-view item" src="{{ item.covers[2] }}"></image>
+                <view class="count">+{{ item.total }}</view>
+            </view>
+        </view>
+        <view wx:if="{{ index >= 1 }}" class="movie-rank-view">
+            <view class="hold-image-view image-view-size">
+                <image class="bg-image image-view-size" mode="aspectFill" src="{{ item.header_bg_image }}">
+                </image>
+                <image class="cover-image image-view-size" mode="aspectFill" src="{{ item.cover_url }}">
+                </image>
+            </view>
+            <view class="right-rank-view">
+                <block wx:for="{{ item.items }}" wx:key="unique">
+                    <view class="rank-list">
+                        <view class="movie-title">
+                            {{ index + 1 }}. {{item.title }}
+                        </view>
+                        <view class="moview-score">
+                            {{ item.rating.value }}分
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </block>
+    <block wx:for="{{ rankBook.selected_collections }}" wx:key="unique">
+        <view class="movie-rank-view">
+            <view class="hold-image-view image-view-size">
+                <image class="bg-image image-view-size" mode="aspectFill" src="{{ item.header_bg_image }}">
+                </image>
+                <image class="cover-image image-view-size" mode="aspectFill" src="{{ item.cover_url }}">
+                </image>
+            </view>
+            <view class="right-rank-view">
+                <block wx:for="{{ item.items }}" wx:key="unique">
+                    <view class="rank-list">
+                        <view class="movie-title">
+                            {{ index + 1 }}. {{item.title }}
+                        </view>
+                        <view class="moview-score">
+                            {{ item.rating.value }}分
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </block>
+</view>

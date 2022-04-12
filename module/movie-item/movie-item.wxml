@@ -1,0 +1,14 @@
+<!--module/movie-item/movie-item.wxml-->
+<view class="item" bindtap="itemAction">
+    <image class="movie-pic" src="{{ movie.cover }}"></image>
+    <view class="movie-title">{{ movie.title }}</view>
+    <view class="movie-score">
+        <block wx:if="{{ movie.scores }}">
+            <image wx:for="{{ movie.scores.on }}" wx:key="unique" class="score" src="/assets/star.png"></image>
+            <image wx:if="{{ movie.scores.half }}" class="score" src="/assets/half_star.png"></image>
+            <image wx:for="{{ movie.scores.off }}" wx:key="unique" class="score" src="/assets/gray_star.png"></image>
+            <view class="score-title">{{ movie.rate }}</view>
+        </block>
+        <view wx:else class="no-score">暂无评分</view>
+    </view>
+</view>

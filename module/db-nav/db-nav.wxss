@@ -1,0 +1,49 @@
+/* module/db-nav/db-nav.wxss */
+.container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.container .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container .navbar .title {
+    font-size: 35rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 250rpx;
+    color: #363636;
+}
+
+/* 子绝父相 */
+.navbar .operation-area {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    top: 0rpx;
+    left: 0rpx;
+    justify-content: center;
+    align-items: center;
+}
+
+.operation-area .image {
+    width: 35rpx;
+    height: 35rpx;
+}
+
+.operation-area .pop {
+    margin-left: 40rpx;
+    margin-right: 35rpx;
+}
+
+
+
+
+
+

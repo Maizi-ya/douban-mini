@@ -1,0 +1,21 @@
+<!--pages/morePage/morePage.wxml-->
+<!-- 使用占位元素进行布局 -->
+<!-- <view class="container">
+    <view class="items-wrapper">
+        <movie-item class="item" wx:for="{{ subjects }}" wx:for-item="movie" movie="{{ movie }}" wx:key="unique">
+        </movie-item>
+        <view wx:if="{{ subjects.length % 3 > 0 }}" class="place-hold-view"></view>
+        <view wx:if="{{ subjects.length % 3 == 1 }}" class="place-hold-view"></view>
+    </view>
+</view> -->
+
+<!-- 使用 9 宫格进行布局 -->
+<db-nav title="{{ title }}" bind:pop="popAction" bind:home="homeAction"></db-nav>
+<view class="container">
+    <view class="items-wrapper">
+        <movie-item class="item" wx:for="{{ subjects }}" wx:for-item="movie" movie="{{ movie }}" wx:key="unique">
+        </movie-item>
+        <view wx:if="{{ subjects.length % 3 > 0 }}" class="place-hold-view"></view>
+        <view wx:if="{{ subjects.length % 3 == 1 }}" class="place-hold-view"></view>
+    </view>
+</view>
