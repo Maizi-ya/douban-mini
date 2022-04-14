@@ -4,6 +4,7 @@ App({
         //挂载全局数据
         wx.db = {};
         const wxInfo = wx.getSystemInfoSync();
+        console.log(wxInfo)
         wx.db.statusBarHeight = wxInfo.statusBarHeight;
         if (wxInfo.platform == 'android') {
             wx.db.navBarHeight = 48;
