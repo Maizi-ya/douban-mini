@@ -1290,6 +1290,187 @@ Page({
                 }
             ],
             total:442
+        },
+        comments: {
+            total:28024,
+            interests:[
+                {
+                    "comment":"如果格林德沃了解一点东方文化或者来过中国，经过哪个王府门口，也该知道麒麟是双生。",
+                    "rating":{
+                        "count":1,
+                        "max":5,
+                        "value":4,
+                        "star_count":4
+                    },
+                    "sharing_url":"https://www.douban.com/doubanapp/dispatch?uri=/movie/26147418/interest/3306678034",
+                    "show_time_tip":false,
+                    "is_voted":false,
+                    "uri":"douban://douban.com/movie/26147418/interest/3306678034",
+                    "platforms":[
+        
+                    ],
+                    "vote_count":3668,
+                    "create_time":"2022-04-08 02:21:59",
+                    "status":"done",
+                    "user":{
+                        "loc":{
+                            "uid":"lahabana",
+                            "id":"128155",
+                            "name":"La Habana"
+                        },
+                        "reg_time":"2011-03-14 21:57:33",
+                        "followed":false,
+                        "name":"✌🏻☹️",
+                        "uid":"chezhevip",
+                        "url":"https://www.douban.com/people/50116284/",
+                        "gender":"M",
+                        "uri":"douban://douban.com/user/50116284",
+                        "kind":"user",
+                        "id":"50116284",
+                        "remark":"",
+                        "avatar":"https://img2.doubanio.com/icon/user_large.jpg",
+                        "is_club":false,
+                        "type":"user",
+                        "avatar_side_icon":"",
+                        "in_blacklist":false
+                    },
+                    "recommend_reason":"",
+                    "user_done_desc":"",
+                    "id":"3306678034",
+                    "wechat_timeline_share":"screenshot"
+                },
+                {
+                    "comment":"《阿不福思：是的，我们有一个孩子》",
+                    "rating":{
+                        "count":1,
+                        "max":5,
+                        "value":3,
+                        "star_count":3
+                    },
+                    "sharing_url":"https://www.douban.com/doubanapp/dispatch?uri=/movie/26147418/interest/3306705385",
+                    "show_time_tip":false,
+                    "is_voted":false,
+                    "uri":"douban://douban.com/movie/26147418/interest/3306705385",
+                    "platforms":[
+        
+                    ],
+                    "vote_count":2476,
+                    "create_time":"2022-04-08 03:18:52",
+                    "status":"done",
+                    "user":{
+                        "loc":{
+                            "uid":"shenzhen",
+                            "id":"118282",
+                            "name":"深圳"
+                        },
+                        "reg_time":"2014-07-06 23:38:17",
+                        "followed":false,
+                        "name":"🍐无原上草",
+                        "uid":"92343255",
+                        "url":"https://www.douban.com/people/92343255/",
+                        "gender":"U",
+                        "uri":"douban://douban.com/user/92343255",
+                        "kind":"user",
+                        "id":"92343255",
+                        "remark":"",
+                        "avatar":"https://img1.doubanio.com/icon/up92343255-7.jpg",
+                        "is_club":false,
+                        "type":"user",
+                        "avatar_side_icon":"",
+                        "in_blacklist":false
+                    },
+                    "recommend_reason":"",
+                    "user_done_desc":"",
+                    "id":"3306705385",
+                    "wechat_timeline_share":"screenshot"
+                },
+                {
+                    "comment":"逐渐演变成服务GGAD的外传了，主客颠倒得别太严重……现在真的很想问一句：神奇动物在哪里？？？",
+                    "rating":{
+                        "count":1,
+                        "max":5,
+                        "value":4,
+                        "star_count":4
+                    },
+                    "sharing_url":"https://www.douban.com/doubanapp/dispatch?uri=/movie/26147418/interest/2626995606",
+                    "show_time_tip":false,
+                    "is_voted":false,
+                    "uri":"douban://douban.com/movie/26147418/interest/2626995606",
+                    "platforms":[
+        
+                    ],
+                    "vote_count":1919,
+                    "create_time":"2022-04-08 03:25:18",
+                    "status":"done",
+                    "user":{
+                        "loc":null,
+                        "reg_time":"2019-06-27 12:26:36",
+                        "followed":false,
+                        "name":"小狗沐浴直拍",
+                        "uid":"198622263",
+                        "url":"https://www.douban.com/people/198622263/",
+                        "gender":"U",
+                        "uri":"douban://douban.com/user/198622263",
+                        "kind":"user",
+                        "id":"198622263",
+                        "remark":"",
+                        "avatar":"https://img2.doubanio.com/icon/up198622263-2.jpg",
+                        "is_club":false,
+                        "type":"user",
+                        "avatar_side_icon":"",
+                        "in_blacklist":false
+                    },
+                    "recommend_reason":"",
+                    "user_done_desc":"",
+                    "id":"2626995606",
+                    "wechat_timeline_share":"screenshot"
+                },
+                {
+                    "comment":"看得好累啊，我真不知道这些人物到底在忙些什么么？他们为什么要打架！都已经拍到第三部了，至今还不知道这个系列的看点是什么？主角到底是谁？神奇动物越来越像吉祥萌物而没有任何的作用，至于邓布利多和格林德天的CP，家人们呀，这大工业糖精，我磕不动啊！结尾互摸对.大卫·叶茨，英国电影导演。曾在美国华盛顿居住一年，之后返回伦敦的国家电影电视学院学习。是著名导演...",
+                    "rating":{
+                        "count":1,
+                        "max":5,
+                        "value":5,
+                        "star_count":5
+                    },
+                    "sharing_url":"https://www.douban.com/doubanapp/dispatch?uri=/movie/26147418/interest/3301794558",
+                    "show_time_tip":false,
+                    "is_voted":false,
+                    "uri":"douban://douban.com/movie/26147418/interest/3301794558",
+                    "platforms":[
+        
+                    ],
+                    "vote_count":1993,
+                    "create_time":"2022-04-08 16:41:55",
+                    "status":"done",
+                    "user":{
+                        "loc":{
+                            "uid":"yokohama",
+                            "id":"128485",
+                            "name":"Yokohama"
+                        },
+                        "reg_time":"2017-10-29 12:35:42",
+                        "followed":false,
+                        "name":"得",
+                        "uid":"168876389",
+                        "url":"https://www.douban.com/people/168876389/",
+                        "gender":"U",
+                        "uri":"douban://douban.com/user/168876389",
+                        "kind":"user",
+                        "id":"168876389",
+                        "remark":"",
+                        "avatar":"https://img9.doubanio.com/icon/up168876389-4.jpg",
+                        "is_club":false,
+                        "type":"user",
+                        "avatar_side_icon":"",
+                        "in_blacklist":false
+                    },
+                    "recommend_reason":"",
+                    "user_done_desc":"",
+                    "id":"3301794558",
+                    "wechat_timeline_share":"screenshot"
+                }
+            ]
         }
     },
 

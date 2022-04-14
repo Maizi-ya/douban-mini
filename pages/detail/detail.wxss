@@ -250,7 +250,7 @@
     margin-right: 32rpx;
 }
 
-.top-view .all-view .title{
+.top-view .all-view .title {
     margin-right: 12rpx;
     font-size: 22rpx;
     color: #878787;
@@ -274,3 +274,108 @@
 .photo-view .item-wrapper .photo-item:last-of-type {
     margin-right: 32rpx;
 }
+
+.comments-view {
+    margin-left: 32rpx;
+    margin-right: 32rpx;
+    margin-top: 32rpx;
+    background-color: white;
+    border-radius: 12rpx;
+}
+
+.comments-view .top-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 32rpx;
+    margin-top: 32rpx;
+    margin-bottom: 32rpx;
+}
+
+.comments-view .top-view .title {
+    font-size: 36rpx;
+}
+
+.top-view .all-view .title {
+    margin-right: 12rpx;
+    font-size: 24rpx;
+    color: #878787;
+}
+
+.comments-view .bottom-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 28rpx 32rpx;
+}
+
+.comments-view .bottom-view .title {
+    font-size: 33rpx;
+}
+
+.comments-view .content-view {
+    display: flex;
+    flex-direction: column;
+    margin-left: 32rpx;
+    margin-right: 32rpx;
+    margin-bottom: 28rpx;
+}
+
+.comments-view .content-view .user-view {
+    display: flex;
+}
+
+.user-view .icon-view {
+    width: 82rpx;
+    height: 82rpx;
+    border-radius: 41rpx;
+}
+
+.content-view .user-view .name-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-view .name-view .nick-name{
+    font-size: 30rpx;
+    margin-left: 12rpx;
+}
+
+.user-view .name-view .date{
+    font-size: 21rpx;
+    color: #9c9c9c;
+    margin-left: 12rpx;
+}
+
+.content-view .content {
+    font-size: 28rpx;
+    color: #414141;
+    margin-top: 22rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+.content-view .count-view {
+    font-size: 22rpx;
+    color: #8d8d8d;
+    margin-top: 12rpx;
+    display: flex;
+    align-items: center;
+}
+
+.content-view .count-view .agree {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 10rpx;
+}
+
+.content-view .line {
+    height: 1rpx;
+    background-color: rgb(249, 249, 249);
+    margin-top: 32rpx;
+}
+
