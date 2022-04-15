@@ -1,25 +1,31 @@
 <!--pages/detail/detail.wxml-->
-<db-nav title="{{ title }}" statusbarColor="#f8f6f3" navbarColor="#f8f6f3"></db-nav>
+<db-nav title="{{ title }}" statusbarColor="#f9f7f4" navbarColor="#f9f7f4"></db-nav>
 <view class="container">
     <view class="header">
         <view class="cover-view">
-            <image class="movie-cover" src="https://img9.doubanio.com/view/photo/m_ratio_poster/public/p2871106106.jpg"></image>
+            <image class="movie-cover" src="{{ movieData.pic.normal }}"></image>
         </view>
         <view class="movie-detail-view">
-            <view class="title">神奇动物：邓布利多之谜(2022）</view>
+            <view class="title">{{ movieData.title }}({{ movieData.year }})</view>
             <view class="origin-title">Fantastic Beasts: The Secrets of Dumbledore</view>
             <view class="honor_info">
-                <view class="rank">No.12</view>
-                <view class="title">2022最值得期待的影视</view>
+                <view class="rank">No.{{ movieData.honor_infos[0].rank }}</view>
+                <view class="title">{{ movieData.honor_infos[0].title }}</view>
             </view>
             <view class="bottom-title">
-                奇幻 冒险 / 奇幻 冒险
+                {{ movieData.genres[0] }} {{ movieData.genres[1] }} / {{ movieData.countries[0] }} {{ movieData.countries[1] }} / {{ movieData.durations[0] }}
             </view>
         </view>
     </view>
     <view class="operation-view">
-        <view class="item left-button">想看</view>
-        <view class="item right-button">看过</view>
+        <view class="item left-view align">
+            <image class="icon" src="/assets/icon_star.png"></image>
+            <view class="title">想看</view>
+        </view>
+        <view class="item right-view align">
+            <image class="icon" src="/assets/icon_like.png"></image>
+            <view class="title">看过</view>
+        </view>
     </view>
     <view class="score-view">
         <view class="title-view">
@@ -60,14 +66,14 @@
         <view class="top-view">
             <view class="title">预告片/剧照</view>
             <view class="all-view">
-                <view class="title">全部 442</view>
+                <view class="title">全部 {{ photoData.total }}</view>
                 <view class="arrow"></view>
             </view>
         </view>
         <scroll-view class="item-wrapper" scroll-x="true">
             <block wx:for="{{ photoData.photos }}" wx:key="unique">
                 <view class="photo-item">
-                    <image class="photo-pic" src="{{ item.image.normal.url }}" mode="aspectFit"></image>
+                    <image style="height:320rpx; width: {{ 320/item.image.normal.height * item.image.normal.width}}rpx;" src="{{ item.image.normal.url }}" mode="aspectFill"></image>
                 </view>
             </block>
         </scroll-view>
@@ -103,5 +109,40 @@
             <view class="title">查看全部短评</view>
             <view class="arrow"></view>
         </view>
+    </view>
+    <view class="recommend-view">
+        <view class="title">喜欢这部电影的人也喜欢</view>
+        <scroll-view class="item-wrapper" scroll-x="true">
+            <block wx:for="{{ recommend }}" wx:key="unique">
+                <view class="recommend-item">
+                    <image class="movie-pic" src="{{ item.pic.normal }}"></image>
+                    <view class="movie-name">{{ item.title }}</view>
+                    <view class="movie-score">{{ item.rating.value }}分</view>
+                </view>
+            </block>
+        </scroll-view>
+    </view>
+    <view class="review">
+        <view class="review-title-view">
+            <view class="title">影评</view>
+            <view class="count">509条</view>
+        </view>
+        <block wx:for="{{ review.reviews }}" wx:key="unique">
+            <view class="review-content-view">
+                <view class="user-view">
+                    <image class="icon-view" src="{{ item.user.avatar }}"></image>
+                    <view class="nick-name">{{ item.user.name }} 看过</view>
+                </view>
+                <view class="content-title margin">{{ item.title }}</view>
+                <view class="content margin">
+                    {{ item.abstract }}
+                </view>
+                <view class="status-view">
+                    <view class="reply">{{ item.comments_count }}回复 ·</view>
+                    <view class="useful-count">{{ item.useful_count }}有用 ·</view>
+                    <view class="forward">{{ item.reshares_count }}转发</view>
+                </view>
+            </view>
+        </block>
     </view>
 </view>

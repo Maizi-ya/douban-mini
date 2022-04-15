@@ -2,8 +2,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    background-color: #f8f6f3;
-    padding-bottom: 1232rpx;
+    background-color: #f9f7f4;
 }
 
 .header {
@@ -17,6 +16,7 @@
     width: 210rpx;
     height: 300rpx;
     border-radius: 12rpx;
+    background-color: #ffbc4f;
 }
 
 .movie-detail-view {
@@ -75,6 +75,12 @@
     margin-right: 32rpx;
 }
 
+.operation-view .align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .operation-view .item {
     width: 200rpx;
     height: 65rpx;
@@ -86,7 +92,13 @@
     box-shadow: 0rpx 5rpx 1rpx #dfdedb;
 }
 
-.operation-view .left-button {
+.operation-view .icon {
+    width: 36rpx;
+    height: 36rpx;
+    margin-right: 8rpx;
+}
+
+.operation-view .left-view {
     margin-right: 22rpx;
 }
 
@@ -264,7 +276,6 @@
 .photo-view .item-wrapper .photo-item {
     display: inline-flex;
     margin-left: 6rpx;
-    background-color: red;
 }
 
 .photo-view .item-wrapper .photo-item:first-of-type {
@@ -379,3 +390,146 @@
     margin-top: 32rpx;
 }
 
+.recommend-view {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80rpx;
+}
+
+.recommend-view .title {
+    font-size: 36rpx;
+    margin-left: 32rpx;
+}
+
+.recommend-view .item-wrapper {
+    white-space: nowrap;
+    margin-top: 32rpx;
+}
+
+.recommend-view .item-wrapper .recommend-item {
+    display: inline-flex;
+    flex-direction: column;
+    width: 180rpx;
+    margin-left: 32rpx;
+}
+
+.recommend-view .item-wrapper .recommend-item:last-of-type {
+    margin-right: 32rpx;
+}
+
+.recommend-item .movie-pic {
+    width: 173rpx;
+    height: 254rpx;
+    border-radius: 8rpx;
+}
+
+.recommend-view .movie-name {
+    font-size: 29rpx;
+    margin-top: 12rpx;
+    color: #232323;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recommend-view .movie-score {
+    font-size: 22rpx;
+    margin-top: 8rpx;
+    color: #878787;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    margin-top: 46rpx;
+    margin-bottom: 46rpx;
+}
+
+.review .review-title-view {
+    display: flex;
+    align-items: center;
+}
+
+.review .review-title-view .title {
+    font-size: 36rpx;
+    margin-left: 32rpx;
+}
+
+.review .review-title-view .count {
+    font-size: 27rpx;
+    margin-left: 6rpx;
+    color: #878787;
+}
+
+.review .review-content-view {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 32rpx;
+}
+
+.review .review-content-view .margin {
+    margin-left: 32rpx;
+    margin-right: 32rpx;
+}
+
+.review .review-content-view .user-view {
+    display: flex;
+    margin-top: 36rpx;
+    align-items: center;
+}
+
+.review-content-view .user-view .icon-view {
+    width: 52rpx;
+    height: 52rpx;
+    border-radius: 41rpx;
+    margin-left: 32rpx;
+}
+
+.review-content-view .user-view .nick-name{
+    font-size: 22rpx;
+    margin-left: 16rpx;
+    color: rgb(139, 139, 139);
+}
+
+.review .review-content-view .content-title { 
+    font-size: 34rpx;
+    margin-top: 12rpx;
+}
+
+.review .review-content-view .content {
+    font-size: 30rpx;
+    color: #2f2f2e;
+    margin-top: 8rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.review .review-content-view .count-view {
+    font-size: 22rpx;
+    color: #8d8d8d;
+    margin-top: 12rpx;
+    display: flex;
+    align-items: center;
+}
+
+.review .review-content-view .status-view {
+    display: flex;
+    margin-left: 32rpx;
+    color: #8f8f90;
+    font-size: 26rpx;
+    margin-top: 12rpx;
+    margin-bottom: 26rpx;
+}
+
+.review-content-view .status-view .useful-count {
+    margin-left: 12rpx;
+}
+
+.review-content-view .status-view .forward {
+    margin-left: 12rpx;
+}
